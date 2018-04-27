@@ -1,0 +1,10 @@
+
+  <div [@arrays]="array.length">
+    <form>
+      <input type="text"  name="some" placeholder="Some Text....." [(ngModel)]="modelText">
+      <br><p>{{modelText}}</p>
+      <input type="Submit"  value={{buttonText}} (click)="add()">
+      <br><p>{{count}}</p><br>
+      <p *ngFor="let arr of array; let i = index" (click)="remove(i)">{{arr}}</p>
+    </form>
+  </div>  
